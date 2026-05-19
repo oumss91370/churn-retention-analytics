@@ -1,0 +1,35 @@
+variable,label,abs_shap
+csat_score,Score CSAT,0.07249654923809552
+tenure_months,Ancienneté (mois),0.04483180315318572
+monthly_logins,Connexions / mois,0.03526162291580469
+total_revenue,Revenu total cumulé,0.030401353740179746
+payment_failures,Échecs de paiement,0.030166294013470877
+failed_payment_rate,Taux d'échec de paiement,0.02379168675934911
+tickets_per_month,Tickets / mois (normalisé),0.01583600968913797
+last_login_days_ago,Dernière connexion (jours),0.012548927711002958
+avg_resolution_time,Temps moyen de résolution,0.010295173153374302
+avg_session_time,Durée moyenne d'une session,0.010016283855720646
+country,Pays,0.009587867797270097
+nps_score,Score NPS,0.008629875795703092
+email_open_rate,Taux d'ouverture e-mail,0.00851126169828314
+usage_growth_rate,Évolution d'usage,0.008448677244631109
+age,Âge,0.00825613371681821
+marketing_click_rate,Taux de clic marketing,0.008238261439021557
+city,Ville,0.007460176753918389
+is_high_value,Client à forte valeur,0.00637815395385174
+customer_segment,Segment client,0.006171642000624929
+signup_channel,Canal d'inscription,0.005934312925252065
+weekly_active_days,Jours actifs / semaine,0.005487233796330429
+survey_response,Réponse au sondage,0.005474574566150644
+complaint_type,Type de plainte,0.005113558629384214
+features_used,Fonctionnalités utilisées,0.004957025588268969
+monthly_fee,Abonnement mensuel,0.004658478710792025
+contract_type,Type de contrat,0.004633563258740261
+discount_applied,Remise appliquée,0.004282695878725555
+payment_method,Moyen de paiement,0.0039501382735877884
+gender,Genre,0.003859997658807237
+support_tickets,Tickets support,0.0030573429193963236
+referral_count,Parrainages,0.0027196204716650367
+engagement_drop,Baisse d'engagement,0.0019191074489617473
+price_increase_last_3m,Hausse de prix récente,0.001744398858848893
+escalations,Escalades support,0.0014527044148171595
