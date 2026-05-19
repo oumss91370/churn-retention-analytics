@@ -48,7 +48,13 @@ def clean(df: pd.DataFrame) -> pd.DataFrame:
         out = out.drop(columns=[ID_COL])
 
     if "complaint_type" in out.columns:
-        out["complaint_type"] = out["complaint_type"].fillna("None")
+        out["complaint_type"] = (
+            out["complaint_type"]
+            .astype("object")
+            .where(out["complaint_type"].notna(), other="None")
+            .replace({"nan": "None", "NaN": "None", "None ": "None"})
+            .astype(str)
+        )
 
     return out
 

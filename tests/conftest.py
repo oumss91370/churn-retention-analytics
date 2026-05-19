@@ -54,7 +54,7 @@ def _generate_mock_data(n: int = 200, churn_rate: float = 0.15, seed: int = RAND
             "price_increase_last_3m": rng.choice(["Yes", "No"], size=n),
             "support_tickets": rng.integers(0, 8, size=n),
             "avg_resolution_time": rng.uniform(1, 60, size=n).round(2),
-            "complaint_type": rng.choice(["Technical", "Billing", "Service", np.nan], size=n),
+            "complaint_type": rng.choice(["Technical", "Billing", "Service", None], size=n),
             "csat_score": rng.uniform(1, 5, size=n).round(1),
             "escalations": rng.integers(0, 5, size=n),
             "email_open_rate": rng.uniform(0.1, 0.9, size=n).round(2),
