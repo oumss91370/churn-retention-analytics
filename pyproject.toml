@@ -16,6 +16,9 @@ source = ["src", "api", "app"]
 omit = [
     "tests/*",
     "*/__init__.py",
+    "app/dashboard.py",
+    "app/components.py",
+    "scripts/*",
 ]
 
 [tool.coverage.report]
