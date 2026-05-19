@@ -50,3 +50,7 @@ Thumbs.db
 # FastAPI
 .env
 *.env.local
+
+# Journal de bord local (non versionné)
+docs/journal.md
+docs/journal.md.bak
