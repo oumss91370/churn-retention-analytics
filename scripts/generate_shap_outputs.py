@@ -160,7 +160,7 @@ def main() -> None:
 
     md.append("## Tableau complet des contributions")
     md.append("")
-    md.append("| Rang | Variable métier | Impact moyen (|SHAP|) |")
+    md.append("| Rang | Variable métier | Impact moyen (\\|SHAP\\|) |")
     md.append("|---|---|---|")
     for i, (_, row) in enumerate(business_df.head(10).iterrows(), start=1):
         md.append(f"| {i} | {row['label']} | {row['abs_shap']:.3f} |")
