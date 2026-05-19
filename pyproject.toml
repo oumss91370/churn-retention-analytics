@@ -1,0 +1,28 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+addopts = "-v --tb=short --strict-markers"
+markers = [
+    "slow: tests qui prennent > 1 seconde",
+    "integration: tests d'intégration API",
+    "regression: tests de performance modèle (bloquants)",
+    "e2e: tests end-to-end (full pipeline)",
+]
+
+[tool.coverage.run]
+source = ["src", "api", "app"]
+omit = [
+    "tests/*",
+    "*/__init__.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "raise FileNotFoundError",
+]
+show_missing = true
