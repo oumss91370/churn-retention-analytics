@@ -6,6 +6,7 @@ import logging
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, HTTPException, status
+from fastapi.responses import RedirectResponse
 
 from api.predict import (
     InferenceContext,
@@ -47,6 +48,12 @@ app = FastAPI(
     ),
     lifespan=lifespan,
 )
+
+
+@app.get("/", include_in_schema=False)
+def root() -> RedirectResponse:
+    """Redirige vers la documentation Swagger."""
+    return RedirectResponse(url="/docs")
 
 
 @app.get("/health", response_model=HealthResponse, tags=["monitoring"])

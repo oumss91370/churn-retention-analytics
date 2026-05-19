@@ -1,7 +1,7 @@
 {
   "model_type": "random_forest",
   "model_class": "RandomForestClassifier",
-  "training_date": "2026-05-19T11:06:27",
+  "training_date": "2026-05-19T12:05:06",
   "decision_threshold": 0.35,
   "metrics": {
     "accuracy": 0.765,
@@ -10,10 +10,10 @@
     "f1": 0.4065656565656566,
     "roc_auc": 0.806921153762173,
     "pr_auc": 0.3028053488503307,
-    "tn": 1369.0,
-    "fp": 427.0,
-    "fn": 43.0,
-    "tp": 161.0,
+    "tn": 1369,
+    "fp": 427,
+    "fn": 43,
+    "tp": 161,
     "decision_threshold": 0.35
   },
   "n_features_out": 62,

@@ -3,7 +3,12 @@
 from __future__ import annotations
 
 import os
+import sys
 from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 import pandas as pd
 import requests
@@ -20,8 +25,6 @@ from app.utils import (
     recommendation_from_factors,
     revenue_at_risk,
 )
-
-ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_API = os.environ.get("CHURN_API_URL", "http://127.0.0.1:8000")
 RAW_CSV = ROOT / "data" / "raw" / "customer_churn.csv"
 FIGURES_DIR = ROOT / "reports" / "figures"
