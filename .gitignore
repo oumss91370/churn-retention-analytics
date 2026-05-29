@@ -55,10 +55,9 @@ Thumbs.db
 docs/journal.md
 docs/journal.md.bak
 
-# Build des slides (artefacts)
-scripts/slides_build/node_modules/
-scripts/slides_build/qa/
-scripts/slides_build/package-lock.json
+# Présentation (non versionnée)
+reports/presentation.pptx
+scripts/slides_build/
 
-# Fichiers Markdown non versionnés (livrables exportés en PDF/PPTX)
+# Fichiers Markdown non versionnés (livrables exportés en PDF)
 *.md
