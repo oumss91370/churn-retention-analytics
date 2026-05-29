@@ -54,3 +54,8 @@ Thumbs.db
 # Journal de bord local (non versionné)
 docs/journal.md
 docs/journal.md.bak
+
+# Build des slides (artefacts)
+scripts/slides_build/node_modules/
+scripts/slides_build/qa/
+scripts/slides_build/package-lock.json
